@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { useFormik } from 'formik';
 
 function GeneralForm() {
+  const { values, errors, handleChange, handleSubmit } = useFormik({
+    initialValues: {
+      email: '',
+      age: '',
+      password: '',
+      confirmPassword: '',
+    },
+  });
+
+  //   console.log(formik);
   return (
-    <div>
-          <form>
+    <form>
       <div>
         <label>Email</label>
         <input
@@ -46,8 +56,7 @@ function GeneralForm() {
       </div>
       <button type="submit">Kaydet</button>
     </form>
-    </div>
-  )
+  );
 }
 
-export default GeneralForm
+export default GeneralForm;

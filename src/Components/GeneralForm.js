@@ -11,7 +11,6 @@ function GeneralForm() {
     },
   });
 
-  //   console.log(formik);
   return (
     <form>
       <div>

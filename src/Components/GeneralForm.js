@@ -13,7 +13,7 @@ function GeneralForm() {
 
   return (
     <form>
-      <div>
+      <div className='inputDiv'>
         <label>Email</label>
         <input
           type="email"
@@ -23,7 +23,7 @@ function GeneralForm() {
           placeholder="Mail adresinizi giriniz"
         />
       </div>
-      <div>
+      <div className='inputDiv'>
         <label>Yaş</label>
         <input
           type="number"

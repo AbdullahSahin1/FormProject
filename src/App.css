@@ -51,3 +51,16 @@ button{
   font-size: 12px;
   text-align: left;
 }
+.checkbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.checkbox input{
+  width: auto;
+  
+}
+.link{
+  color: white;
+}
